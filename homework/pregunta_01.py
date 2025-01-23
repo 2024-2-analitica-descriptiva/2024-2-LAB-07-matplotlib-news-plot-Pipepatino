@@ -47,7 +47,7 @@ def pregunta_01():
         'Radio': 2,
     }
 
-    ruta = '/Users/pipepatino/Documents/Analisis_Visualizacion_2024_2/Laboratorios/2024-2-LAB-07-matplotlib-news-plot-Pipepatino/files/input/news.csv'
+    ruta = 'files/input/news.csv'
     df = pd.read_csv( ruta, index_col=0)
 
     for col in df.columns:
@@ -106,7 +106,6 @@ def pregunta_01():
 
     plt.tight_layout()
     plt.savefig('files/plots/news.png')
-    plt.show()
 
 if __name__ == '__main__':
     pregunta_01()
